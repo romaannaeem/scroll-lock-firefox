@@ -21,17 +21,21 @@
       s.id = 'noscrollrule';
       s.appendChild(document.createTextNode(r));
       document.body.appendChild(s);
-    } else {
-      mysty.remove();
     }
     void 0;
+
+    console.log(document.getElementById('lock-button').textContent);
   }
 
   /**
    * Remove the scroll lock from the page.
    */
   function resetLock() {
-    console.log('Just a placeholder reset!');
+    var mysty = document.getElementById('noscrollrule');
+    if (mysty) {
+      mysty.remove();
+    }
+    void 0;
   }
 
   /**
