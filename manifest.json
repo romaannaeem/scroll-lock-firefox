@@ -2,17 +2,24 @@
   "manifest_version": 2,
   "name": "Scroll Lock",
   "version": "1.0",
-
   "description": "Locks scrolling on any page.",
-
+  "homepage_url": "https://github.com/romaannaeem/scroll-lock-firefox",
   "icons": {
     "48": "icons/border-48.png"
   },
 
-  "content_scripts": [
-    {
-      "matches": ["*://*.mozilla.org/*"],
-      "js": ["scroll-lock.js"]
-    }
-  ]
+  "permissions": ["activeTab"],
+
+  "browser_action": {
+    "default_icon": "icons/border-48.png",
+    "theme_icons": [
+      {
+        "light": "icons/border-48.png",
+        "dark": "icons/border-48.png",
+        "size": 48
+      }
+    ],
+    "default_title": "Scroll Lock",
+    "default_popup": "popup/toggle_lock.html"
+  }
 }
