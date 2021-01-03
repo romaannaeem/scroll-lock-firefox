@@ -5,17 +5,18 @@
   "description": "Locks scrolling on any page.",
   "homepage_url": "https://github.com/romaannaeem/scroll-lock-firefox",
   "icons": {
-    "48": "icons/border-48.png"
+    "48": "icons/scroll-lock-48.png",
+    "96": "icons/scroll-lock-96.png"
   },
 
   "permissions": ["activeTab"],
 
   "browser_action": {
-    "default_icon": "icons/border-48.png",
+    "default_icon": "icons/scroll-lock-48.png",
     "theme_icons": [
       {
-        "light": "icons/border-48.png",
-        "dark": "icons/border-48.png",
+        "light": "icons/scroll-lock-light-48.png",
+        "dark": "icons/scroll-lock-48.png",
         "size": 48
       }
     ],
