@@ -10,9 +10,7 @@
   window.hasRun = true;
 
   /**
-   * Given a URL to a beast image, remove all existing beasts, then
-   * create and style an IMG node pointing to
-   * that image, then insert the node into the document.
+   * Locks the scrolling on the given tab
    */
   function scrollLock() {
     var r = 'html,body{overflow:hidden !important;}';
@@ -30,7 +28,7 @@
   }
 
   /**
-   * Remove every beast from the page.
+   * Remove the scroll lock from the page.
    */
   function resetLock() {
     console.log('Just a placeholder reset!');
@@ -38,7 +36,7 @@
 
   /**
    * Listen for messages from the background script.
-   * Call "beastify()" or "reset()".
+   * Call "scrollLock()" or "reset()".
    */
   browser.runtime.onMessage.addListener((message) => {
     if (message.command === 'lock') {
