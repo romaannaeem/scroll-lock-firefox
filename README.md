@@ -4,14 +4,8 @@ This plugin locks the scroll bar, preventing unwanted scrolling. You can lock or
 
 ## Installation
 
-This plugin is not yet on the Add-on store. When it is, this will be updated. This is, of course, only compatible with Firefox as of now.
-
-1. Clone this repo
-2. Go to `about:debugging#/runtime/this-firefox` in your browser window.
-3. Click `Load Temporary Add-on…`
-4. Select any file inside the repo's directory. You can now test out this plugin!
+This plugin is [available on the addon store](https://addons.mozilla.org/en-CA/firefox/addon/scroll-lock/). This plugin can now be installed and enjoyed from there!
 
 ## Notes
 
-- I have full intentions of uploading this plugin to the Add-on store. This installation process is temporary, and when it is uploaded to the store, I will link that here instead.
 - I hope you find some use for this! Please let me know what you end up using this for, if you do.
